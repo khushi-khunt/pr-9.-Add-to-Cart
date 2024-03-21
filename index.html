@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD-MENU</title>
+
+    <!-- fonts link  -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!-- font awesom  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/img/fast-food.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://googledrive.com/host/0B1RR6fhjI2QROGt0MTFoVkhMdUk/fonts.css">
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex ">
+                    <div class="col-6">
+                        <div class="icon">
+                            <img src="assets/img/fast-food.png" width="50px" height="50px" alt="">
+                            food-frenzy
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <button style="background-color: #08415c;" class="btn btn-primary" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i><span
+                                id="counter">0</span></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <div class="head">
+                                    <h3>My cart</h3>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div id="side"></div>
+                                        <div class="sidebar" style="color: EFEBCE;">
+
+                                            <div class="cartItem" id="cartItem">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foot">
+                                <h3>TOTAL</h3>
+                                <h2 id="FOODTOTAL">$ 0.0</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2>Food Faction</h2>
+                <div class="col-12 d-flex flex-wrap" id="allItems">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- script-->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
