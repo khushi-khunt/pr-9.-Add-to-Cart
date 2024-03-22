@@ -39,6 +39,14 @@ viewproduct();
 
 let cart = [];
 const addcart = (id) => {
+    let allcart = JSON.parse(localStorage.getItem('cart')) ? JSON   .parse(localStorage.getItem('cart')) : [];
+    let duplicatecart = allcart.find((item) => {
+        return item.id == id;
+    })
+    if (duplicatecart) {
+        alert("item already exist......");
+        return false;
+    }
     if (localStorage.getItem("cart") === null || localStorage.getItem("cart") === undefined) {
         product.map((item) => {
             if (item.id == id) {
@@ -130,9 +138,4 @@ const Editcart = (id) => {
     alert("item updated sucessfully...");
     viewcart();
 }
-
-
-
-
-
 
